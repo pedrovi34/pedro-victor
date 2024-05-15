@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Victor - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="navigation">
+        <div class="wrapper">
+            <a class="logo" href="#home">Pedro Victor</a>
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Habilidades</a></li>
+                    <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="#projects">Projetos</a></li>
+                </ul>
+                <a class="button" onclick="closeMenu()" href="#contact">Contato</a>
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/pedro-victor-rocha-goncalves-751b38294/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Ícone do LinkedIn -->
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/pedrovictorgoncalves">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Ícone do GitHub -->
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu"></button>
+            <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu"></button>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>Olá, meu nome é</h4>
+                    <h1>Pedro Victor</h1>
+                    <h2>Desenvolvedor Full Stack</h2>
+                </header>
+                <div class="content">
+                    <p>Apaixonado por criar experiências web interativas e responsivas.</p>
+                    <a class="button" href="#projects">Meus Projetos</a>
+                </div>
+            </div>
+            <div class="col-b">
+                <img src="./assets/linguagem.png" alt="linguagem" />
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h4>Habilidades</h4>
+                <h2>Tecnologias que domino</h2>
+            </header>
+            <div class="content">
+                <div class="cards">
+                    <div class="card">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="card">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="card">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="card">
+                        <h3>React</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="card">
+                        <h3>IA</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Análise de Dados</h3>
+                    </div>
+                    <div class="card">
+                        <h3>IoT</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Gestão de Projetos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>Sobre mim</h4>
+                    <h2>Minha trajetória</h2>
+                </header>
+                <div class="content">
+                    <p>Sou apaixonado por tecnologia desde cedo e encontrei no desenvolvimento web a minha paixão. Busco
+                        constantemente aprimorar minhas habilidades e me manter atualizado com as últimas tendências do
+                        mercado.</p>
+                    <p>Meu objetivo é construir aplicações web inovadoras e de alta qualidade, focadas na experiência do
+                        usuário. Sou um profissional dedicado e colaborativo, sempre em busca de novos desafios.</p>
+                </div>
+            </div>
+            <div class="col-b">
+                <img src="./assets/Desenvolvedor focado.png" alt="Desenvolvedor focado" />
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="wrapper">
+            <header>
+                <h4>Projetos</h4>
+                <h2>O que eu tenho construído</h2>
+            </header>
+            <div class="content">
+                <div class="cards">
+                    <div class="card">
+                        <a href="hhttps://github.com/pedrovi34">
+                            <img src="./assets/projeto1.png" alt="Print do projeto 1" />
+                            <h3>DoctorCare</h3>
+                            <p>Landing Page de uma clínica médica</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h2>Entre em contato</h2>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> vp366314@gmail.com
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/whyvictur/?igsh=MTJmZ2FzcmZ6NGprcA%3D%3D">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i> @whyvictur
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="button" href="https://www.linkedin.com/in/pedro-victor-rocha-goncalves-751b38294/" target="_blank">Meu LinkedIn</a>
+                </div>
+           
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="col-a">
+                <a class="logo" href="#home">Pedro Victor</a>
+                <p>©2023 Pedro Victor. <br />Todos os direitos reservados.</p>
+            </div>
+            <div class="col-b">
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/pedro-victor-rocha-goncalves-751b38294/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Ícone do LinkedIn -->
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/pedrovictorgoncalves">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Ícone do GitHub -->
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/whyvictur/?igsh=MTJmZ2FzcmZ6NGprcA%3D%3D">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i> @whyvictur
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a id="backToTopButton" href="#home">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ícone de seta para cima -->
+        </svg>
+    </a>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
